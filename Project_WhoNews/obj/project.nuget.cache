@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZZ/xYeuJh9gEOOW6+FLS4DBbGL1JXIktTofq/8yWulr1a67hP9wiWma+E5IamSctm9laGbpbq8rXEJSVTOyF9A==",
+  "dgSpecHash": "LIokZnFFFukXkKKU9MvMr19WbhmEaFAQPDCU1ddHiYlHa2JN3gCT0NbqSm04cScTZ5pjJp6lVnA0gH6rt4GVdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\Project_WhoNews\\Project_WhoNews.csproj",
+  "projectFilePath": "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\WhoNewsWebApplication\\Project_WhoNews\\Project_WhoNews.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elgacson\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.25\\microsoft.aspnetcore.cryptography.internal.3.1.25.nupkg.sha512",
     "C:\\Users\\Elgacson\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.25\\microsoft.aspnetcore.cryptography.keyderivation.3.1.25.nupkg.sha512",

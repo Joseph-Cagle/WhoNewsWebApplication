@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\Project_WhoNews\\Project_WhoNews.csproj": {}
+    "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\WhoNewsWebApplication\\Project_WhoNews\\Project_WhoNews.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\Project_WhoNews\\Project_WhoNews.csproj": {
+    "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\WhoNewsWebApplication\\Project_WhoNews\\Project_WhoNews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\Project_WhoNews\\Project_WhoNews.csproj",
+        "projectUniqueName": "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\WhoNewsWebApplication\\Project_WhoNews\\Project_WhoNews.csproj",
         "projectName": "Project_WhoNews",
-        "projectPath": "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\Project_WhoNews\\Project_WhoNews.csproj",
+        "projectPath": "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\WhoNewsWebApplication\\Project_WhoNews\\Project_WhoNews.csproj",
         "packagesPath": "C:\\Users\\Elgacson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\Project_WhoNews\\obj\\",
+        "outputPath": "C:\\Users\\Elgacson\\source\\repos\\Project_WhoNews\\WhoNewsWebApplication\\Project_WhoNews\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
