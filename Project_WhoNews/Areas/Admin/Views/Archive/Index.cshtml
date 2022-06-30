@@ -1,0 +1,51 @@
+﻿@model PaginatedList<Project_WhoNews.Models.Entities.ArchiveDb1>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1> Archived Articles</h1>
+
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by title or by author name: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
+
+<div class="container">
+    <div class="row">
+        
+        @foreach (var article in Model)
+        {
+           
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@article.Title</h5>
+                        <p class="card-text">@article.BodyContent</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">@article.Author</li>
+                        <li class="list-group-item">@article.DatePublished</li>
+                    </ul>
+                  
+                    <div class="card-body">
+                        <a asp-action="Details" asp-route-id="@article.Id" class="card-link">Details</a>
+                        <a asp-action="Edit" asp-route-id="@article.Id" class="card-link">Edit</a>
+                    </div>
+                    <div class="card-body">
+                        <a asp-action="Delete" asp-route-id="@article.Id" class="card-link">Delete</a>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

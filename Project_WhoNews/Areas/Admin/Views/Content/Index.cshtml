@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Project_WhoNews.Models.Entities.Content>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Articles</h1>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by title or by author name: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div class="container">
+    <div class="row">
+    
+        @foreach (var article in Model)
+        {
+           @if (article.IsArchived == false)
+           {
+               <div class="col-md-4">
+                   <div class="card" style="width: 18rem;">
+                       <img src="@article.Image" class="card-img-top" alt="...">
+                       <div class="card-body">
+                           <h5 class="card-title">Title: @article.Title</h5>
+                           <p class="card-text">Content: @article.BodyContent</p>
+                       </div>
+                       <ul class="list-group list-group-flush">
+                           <li class="list-group-item">Author: @article.Author</li>
+                           <li class="list-group-item">Date Published: @article.DatePublished</li>
+                       </ul>
+                       <div class="card-body">
+                           <a asp-action="Details" asp-route-id="@article.Id" class="card-link btn-sm">Details</a>
+                           <a asp-action="Edit" asp-route-id="@article.Id" class="card-link btn-sm">Edit</a>
+                       </div>
+                       <div class="card-body float-right">
+                           <a asp-action="Archive" asp-route-id="@article.Id" class="card-link btn-sm ">Archive</a>
+                           <a asp-action="Delete" asp-route-id="@article.Id" class="card-link btn-sm">Delete</a>
+                       </div>
+                   </div>
+               </div>
+
+           }
+        }
+    </div>
+</div>
