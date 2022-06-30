@@ -40,12 +40,24 @@
                            <li class="list-group-item">Date Published: @article.DatePublished</li>
                        </ul>
                        <div class="card-body">
-                           <a asp-action="Details" asp-route-id="@article.Id" class="card-link btn-sm">Details</a>
-                           <a asp-action="Edit" asp-route-id="@article.Id" class="card-link btn-sm">Edit</a>
+
+                           <a asp-action="Details" asp-route-id="@article.Id" class="card-link btn-sm">View Article</a>
+                           
+                           @if ((User.Identity.IsAuthenticated))
+                           {
+                               <a asp-action="Edit" asp-route-id="@article.Id" class="card-link btn-sm">Edit</a>
+                           }
                        </div>
+                       <hr/>
                        <div class="card-body float-right">
-                           <a asp-action="Archive" asp-route-id="@article.Id" class="card-link btn-sm ">Archive</a>
-                           <a asp-action="Delete" asp-route-id="@article.Id" class="card-link btn-sm">Delete</a>
+                           @if ((User.Identity.IsAuthenticated))
+                           {
+                               <a asp-action="Archive" asp-route-id="@article.Id" class="card-link btn-sm ">Archive</a>
+                           }
+                           @if ((User.Identity.IsAuthenticated))
+                           {
+                               <a asp-action="Delete" asp-route-id="@article.Id" class="card-link btn-sm">Delete</a>
+                           }
                        </div>
                    </div>
                </div>
